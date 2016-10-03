@@ -14,7 +14,8 @@ Requires:       postgresql92 >= 9.2.17
 Requires:       postgresql92-server >= 9.2.17
 Requires:       postgresql92-libs >= 9.2.17
 
-BuildRequires:  postgresql92-devel, curl-devel 
+BuildRequires:  postgresql92-devel,
+BuildRequires:  curl-devel >= 0.7.20
 BuildRequires:	make, gcc
 
 %description

@@ -14,7 +14,8 @@ Requires:       postgresql93 >= 9.3.4
 Requires:       postgresql93-server >= 9.3.4
 Requires:       postgresql93-libs >= 9.3.4
 
-BuildRequires:  postgresql93-devel, curl-devel 
+BuildRequires:  postgresql93-devel
+BuildRequires:  curl-devel >= 0.7.20
 BuildRequires:	make, gcc
 
 %description

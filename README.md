@@ -3,7 +3,7 @@ pgsql-http
 
 CentOS/RH/Amazon RPMs for pgsql-http <https://github.com/pramsey/pgsql-http> and postgresql 9.2 (>=9.2.17), 9.3 (>= 9.3.4) and 9.4 (>=9.4.1).
 
-Tested on CentOS 6.4/7.1 x86_64 and Amazon Linux 2014.03
+Tested on CentOS 6.4 (unofficial curl packages), CentOS 7.1 and Amazon Linux 2014.03 (x86_64 in all cases)
 
 pgsql-http is a HTTP client for PostgreSQL, able to retrieve a web page from inside the database.
 
@@ -14,10 +14,11 @@ Use postgresql92\* packages for PostgreSQL 9.2 (>= 9.2.17), postgresql93\* packa
 
 To build: 
 
-* postgresql92-devel, postgresql93-devel or postgresql94-devel
-* make
+* postgresql92-devel >= 9.2.17, postgresql93-devel >= 9.3.4 or postgresql94-devel >= 9.4.1
+* curl-devel >= 0.7.20
+* automake
 * gcc
-* Git
+* git
 * rpm-build
 
 To install the RPM for PostgreSQL
