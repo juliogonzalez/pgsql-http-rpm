@@ -48,8 +48,8 @@ Build the RPMs:
 
 And install:
 
-    rpm -Uvh RPMS/$HOSTTYPE/postgresql-93-pgsql-http-1.1.1-1.*.$HOSTTYPE.rpm for PostgreSQL 9.3
+    rpm -Uvh RPMS/$HOSTTYPE/postgresql-93-pgsql-http-1.1.1-2*.$HOSTTYPE.rpm for PostgreSQL 9.3
 
     or
 
-    rpm -Uvh RPMS/$HOSTTYPE/postgresql-94-pgsql-http-1.1.1-1.*.$HOSTTYPE.rpm for PostgreSQL 9.4
+    rpm -Uvh RPMS/$HOSTTYPE/postgresql-94-pgsql-http-1.1.1-2*.$HOSTTYPE.rpm for PostgreSQL 9.4
