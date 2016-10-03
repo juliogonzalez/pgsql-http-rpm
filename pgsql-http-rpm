@@ -2,6 +2,7 @@
 
 SCRIPT=$(basename ${0})
 MODULE_VER="1.1.1"
+GIT_VER="a58d9d24acb982ab71ffb95c45fb48063f5a86a6"
 VERSIONS="9.3 9.4"
 
 function help() {
@@ -43,8 +44,13 @@ function create_build_env() {
 }
 
 function get_sources() {
-  if [ ! -f "./SOURCES/v${1}.tar.gz" ]; then
-    wget "https://github.com/pramsey/pgsql-http/archive/v${1}.tar.gz" -O "./SOURCES/v${1}.tar.gz"
+  if [ "${2}" != "" ]; then
+    FETCH_VER=${2}
+  else
+    FETCH_VER=${1}
+  fi
+  if [ ! -f "./SOURCES/${FETCH_VER}.tar.gz" ]; then
+    wget "https://github.com/pramsey/pgsql-http/archive/${FETCH_VER}.tar.gz" -O "./SOURCES/${FETCH_VER}.tar.gz"
   fi
 }
 
@@ -81,7 +87,7 @@ if [ "${FOUND}" == 'FALSE' ]; then
 fi
 
 create_build_env
-get_sources ${MODULE_VER}
+get_sources ${MODULE_VER} ${GIT_VER}
 build_rpm ${PG_VER}
 if [ $? -eq 0 ]; then
   echo Your packages are available at $PWD/RPMS.
