@@ -3,7 +3,7 @@
 SCRIPT=$(basename ${0})
 MODULE_VER="1.1.1"
 GIT_VER="a58d9d24acb982ab71ffb95c45fb48063f5a86a6"
-VERSIONS="9.3 9.4"
+VERSIONS="9.2 9.3 9.4"
 
 function help() {
   echo ""
