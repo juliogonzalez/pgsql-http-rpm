@@ -1,8 +1,8 @@
 #!/bin/bash
 
 SCRIPT=$(basename ${0})
-MODULE_VER="1.1.1"
-GIT_VER="a58d9d24acb982ab71ffb95c45fb48063f5a86a6"
+MODULE_VER="1.1.2"
+GIT_VER=""
 VERSIONS="9.2 9.3 9.4"
 
 function help() {
@@ -47,7 +47,7 @@ function get_sources() {
   if [ "${2}" != "" ]; then
     FETCH_VER=${2}
   else
-    FETCH_VER=${1}
+    FETCH_VER=v${1}
   fi
   if [ ! -f "./SOURCES/${FETCH_VER}.tar.gz" ]; then
     wget "https://github.com/pramsey/pgsql-http/archive/${FETCH_VER}.tar.gz" -O "./SOURCES/${FETCH_VER}.tar.gz"

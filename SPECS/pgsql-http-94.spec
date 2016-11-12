@@ -1,14 +1,11 @@
-%global commit0 a58d9d24acb982ab71ffb95c45fb48063f5a86a6
-%global shortcommit0 %(c=%{commit0}; echo ${c:0:7})
-
 Name:           postgresql-94-pgsql-http
-Version:        1.1.1
-Release:        2git%{shortcommit0}%{?dist}
+Version:        1.1.2
+Release:        1%{?dist}
 Summary:        HTTP client for PostgreSQL, retrieve a web page from inside the database.
 
 License:        None
 URL:            https://github.com/pramsey/pgsql-http
-Source:         https://github.com/pramsey/pgsql-http/archive/%{commit0}.tar.gz
+Source:         https://github.com/pramsey/pgsql-http/archive/v%{version}.tar.gz
 
 Requires:       postgresql94 >= 9.4.1
 Requires:       postgresql94-server >= 9.4.1
@@ -24,7 +21,7 @@ HTTP client for PostgreSQL, retrieve a web page from inside the database.
 %global debug_package %{nil}
 
 %prep
-%setup -q -n pgsql-http-%{commit0}
+%setup -q -n pgsql-http-%{version}
 
 
 %build
@@ -50,6 +47,10 @@ rm -rf %{buildroot}
 
 
 %changelog
+
+* Sat Nov 12 2016 Julio Gonzalez Gil <git@juliogonzalez.es> - 1.1.2-1
+- 1.1.2 build from https://github.com/pramsey/pgsql-http
+
 * Fri Sep 30 2016 Julio Gonzalez Gil <git@juliogonzalez.es> - 1.1.1-2gita58d9d2
 - Build from commit a58d9d2 (latest available)
 
