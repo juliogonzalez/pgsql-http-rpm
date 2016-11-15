@@ -32,33 +32,46 @@ Building fresh RPMs
 
 Clone the repo: 
 
-    git@github.com:juliogonzalez/pgsql-http-rpm.git
-    cd pgsql-http-rpm
-
+```
+git@github.com:juliogonzalez/pgsql-http-rpm.git
+cd pgsql-http-rpm
+```
 
 Build the pgsql-http RPM
 ---------------------
 
 Build the RPMs:
 
-   ./pgsql-http-rpm -p 9.2 # for PostgreSQL 9.2
+```
+./pgsql-http-rpm -p 9.2 # for PostgreSQL 9.2
+```
 
-    or
+or
 
-    ./pgsql-http_rpm -p 9.3 # for PostgreSQL 9.3
+```
+./pgsql-http-rpm -p 9.3 # for PostgreSQL 9.3
+```
 
-    or
+or
 
-    ./pgsql-http_rpm -p 9.4 # for PostgreSQL 9.4
+```
+./pgsql-http-rpm -p 9.4 # for PostgreSQL 9.4
+```
 
 And install:
 
-    rpm -Uvh RPMS/$HOSTTYPE/postgresql-92-pgsql-http-1.1.2-1*.$HOSTTYPE.rpm # for PostgreSQL 9.2
+```
+rpm -Uvh RPMS/$HOSTTYPE/postgresql-92-pgsql-http-1.1.2-1*.$HOSTTYPE.rpm # for PostgreSQL 9.2
+```
 
-    or
+or
 
-    rpm -Uvh RPMS/$HOSTTYPE/postgresql-93-pgsql-http-1.1.2-1*.$HOSTTYPE.rpm # for PostgreSQL 9.3
+```
+rpm -Uvh RPMS/$HOSTTYPE/postgresql-93-pgsql-http-1.1.2-1*.$HOSTTYPE.rpm # for PostgreSQL 9.3
+```
 
-    or
+or
 
-    rpm -Uvh RPMS/$HOSTTYPE/postgresql-94-pgsql-http-1.1.2-1*.$HOSTTYPE.rpm # for PostgreSQL 9.4
+```
+rpm -Uvh RPMS/$HOSTTYPE/postgresql-94-pgsql-http-1.1.2-1*.$HOSTTYPE.rpm # for PostgreSQL 9.4
+```
