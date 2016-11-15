@@ -1,7 +1,7 @@
 pgsql-http
 ==========
 
-CentOS/RH/Amazon RPMs for pgsql-http <https://github.com/pramsey/pgsql-http> and postgresql 9.2 (>=9.2.17), 9.3 (>= 9.3.4) and 9.4 (>=9.4.1).
+CentOS/RH/Amazon RPMs for pgsql-http <https://github.com/pramsey/pgsql-http> and postgresql 9.2 (>=9.2.17), 9.3 (>= 9.3.4) and 9.4 (>=9.4.1) from the [official repositories](https://yum.postgresql.org/)
 
 Tested on CentOS 6.4 (unofficial curl packages), CentOS 7.1 and Amazon Linux 2014.03 (x86_64 in all cases)
 
@@ -10,7 +10,7 @@ pgsql-http is a HTTP client for PostgreSQL, able to retrieve a web page from ins
 Requirements
 ------------
 
-Use postgresql92\* packages for PostgreSQL 9.2 (>= 9.2.17), postgresql93\* packages for PostgreSQL 9.3 (>= 9.3.4) or posgresql94\* packages for PostgreSQL 9.4 (>= 9.4.1).
+Use postgresql92\* packages for PostgreSQL 9.2 (>= 9.2.17), postgresql93\* packages for PostgreSQL 9.3 (>= 9.3.4) or posgresql94\* packages for PostgreSQL 9.4 (>= 9.4.1), in all cases from the [official repositories](https://yum.postgresql.org/) (and not from your distribution repositories!)
 
 To build: 
 
