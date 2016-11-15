@@ -41,7 +41,7 @@ Build the pgsql-http RPM
 
 Build the RPMs:
 
-   ./pgsql-http_rpm -p 9.2 for PostgreSQL 9.2
+   ./pgsql-http-rpm -p 9.2 for PostgreSQL 9.2
 
     or
 
