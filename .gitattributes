@@ -1,0 +1,3 @@
+clean text eol=lf
+pgsql-http-rpm text eol=lf
+SPECS/pgsql-http-*.spec text eol=lf
